@@ -7,7 +7,7 @@ class Solution(object):
         """
         nums.sort()
         j=1
-        for i in range(len(nums)*2):
+        while(j<=101):
             if k*j not in nums:
                 return k*j
             j+=1
