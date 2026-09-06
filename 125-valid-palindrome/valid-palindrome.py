@@ -3,9 +3,9 @@ class Solution:
         s=s.lower()
         ans=""
         for i in s:
-            if i in " [],*:./@!#$%^&*()_-+=\'\"{}?><;\\`":
+            if not i.isalnum():
                 continue 
-            ans=i+ans
+            ans+=i
         return ans==ans[::-1]
                 
             
